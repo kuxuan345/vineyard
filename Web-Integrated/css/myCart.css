@@ -1,0 +1,198 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: url('vintage-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.empty-message {
+    font-size: 18px;
+    font-style: italic;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.cart-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    border: 2px double #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(199, 182, 131, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: auto;
+    background-color: #0000003f; 
+    margin: 30px 0; 
+    margin-bottom: -10px;
+}
+
+.cart-title {
+    font-size: 23px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    float: left; 
+    width: 90px;
+}
+
+.back-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.back-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.cart-detail {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #180f00;
+    text-align: left;
+}
+
+.cart-detail th,
+.cart-detail td {
+    padding: 15px;
+    border: 1px solid #00000000;
+}
+
+.cart-detail th {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cart-detail td {
+    background-color: #fffaf2;
+}
+
+.item-name {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.quantity-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.update-btn {
+    padding: 5px 15px;
+    margin-left: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.total {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    color: #5d3a00;
+}
+
+.login-prompt {
+    font-size: 16px;
+    color: #3e3e3e;
+}
+
+.login-link {
+    color: #854d0e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.checkout-btn {
+    padding: 6px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.clear-cart-btn {
+    padding: 6px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-cart-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}

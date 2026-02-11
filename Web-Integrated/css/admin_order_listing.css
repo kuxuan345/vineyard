@@ -1,0 +1,26 @@
+.listing{
+    width: 100%;
+    max-width: 1150px;
+    border-collapse: collapse;
+    margin: 20px 0; 
+}
+
+.listing th, 
+.listing td {
+    padding: 8px; 
+    text-align: center; 
+    font-size: 13px; 
+    text-transform: none; 
+    border: 1px solid #000; 
+}
+
+.listing th {
+    background-color: #00000069; 
+    color: #fff;
+    font-size: 0.9em;
+    text-transform: uppercase; 
+}
+
+.listing td {
+    color: #000; 
+}

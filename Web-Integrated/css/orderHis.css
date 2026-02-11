@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+.order-box {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    border: 2px double #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(199, 182, 131, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: auto;
+    background-color: #0000003f; 
+    margin: 30px 0; 
+    margin-bottom: -10px;
+}
+
+h1 {
+    font-size: 23px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+
+.order-history {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #180f00;
+    text-align: left;
+}
+
+.order-history th,
+.order-history td {
+    padding: 15px;
+    border: 1px solid #00000000;
+}
+
+.order-history th {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.order-history td {
+    background-color: #fffaf2;
+}
+
+.details-btn{
+    padding: 6px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.back-btn {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+}
+
+.back-btn i {
+    margin-right: 8px; 
+}
+
+.back-btn:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00000071;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+form {
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}

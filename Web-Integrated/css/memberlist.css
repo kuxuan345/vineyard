@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.member-list {
+    border: 2px solid #000000;
+    padding: 30px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 950px;
+    background: rgb(255, 255, 255); /* White background */
+    backdrop-filter: blur(15px);
+    border: 2px double #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    color: #000000; /* Text color */
+    text-align: left;
+}
+
+.table th, 
+.table td {
+    border: 1px solid #000000; /* Thicker border for consistency */
+    padding: 9px; 
+}
+
+.table th {
+    color: #ffffff;
+    background: #3333338f; /* Dark background for headers */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.table td {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.table tr:nth-child(even) {
+    background: #f9f9f9; /* Alternate row color */
+}
+
+.table tr:nth-child(odd) {
+    background: #ffffff; /* White for odd rows */
+}
+
+.table tr:hover td {
+    background: #d3d3d3; /* Subtle hover effect */
+}
+
+.table td:last-child {
+    position: relative;
+}
+
+.table .popup {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    translate: 5px -50%;
+    z-index: 999;
+    border: 1px solid #333;
+    display: none;
+    width: 140px; 
+    height: auto;
+}
+
+.table tr:hover .popup {
+    display: block;
+}

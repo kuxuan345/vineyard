@@ -1,0 +1,75 @@
+/* General Page Styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #ffffff;
+}
+
+h2 {
+    letter-spacing: 3px;
+}
+
+.slot-machine {
+    text-align: center;
+    backdrop-filter: blur(15px);
+    background: transparent; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.511);
+    border: 2px double rgba(255, 255, 255, .5);
+    width: 1000px;
+    height: auto;
+    margin: 10px auto;
+    line-height: 35px;
+}
+  
+  .slots {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 30px;
+    padding: 5px;
+  }
+  
+  .slot {
+    width: 115px;
+    height: 115px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #b2b0b0;
+    transition: background-image 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  button {
+    padding: 6px 25px;
+    font-size: 15px;
+    background-color: rgba(130, 0, 0, 0.895);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }
+  
+  
+  button:hover {
+    background-color: rgba(189, 53, 53, 0.829);
+  }
+  
+  
+  #reward-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  

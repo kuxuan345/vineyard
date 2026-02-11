@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    background: #f4f4f4; /* Optional background color */
+  }
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+  
+.container {
+    width: 450px; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px double rgba(255, 255, 255, .5);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    background: transparent;
+    line-height: 40px;
+    margin-top: 15px;
+}
+  
+p {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+p:empty {
+    display: none;
+}
+
+p.success {
+    background-color: #28a745;
+}
+
+p.error {
+    background-color: #dc3545;
+}
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  label {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #ffffff;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background: #ffffff4b;
+    color: white;
+    border: 3px double rgba(255, 255, 255, .5);
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+
+  .reset-password-section h2 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .reset-password-section h3 {
+    text-align: center;
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+
+  .reset-password-section .input-box {
+    position: relative;
+  }
+  
+  .reset-password-section .input-box input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .reset-password-section .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #ffffff;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .reset-password-section .input-box input:focus + label,
+  .reset-password-section .input-box input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.9em;
+    color: #000000;
+  }
+  
+  .reset-password-section .error {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    text-align: left;
+  }
+  
+  .reset-password-section button {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff4b;
+    border: 4px double rgba(255, 255, 255, .5);
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+  
+  .reset-password-section button:hover {
+    background-color: #000000;
+  }
+  
+  .reset-password-section button:focus {
+    outline: none;
+  }
+
+  .back-btn {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+}
+
+.back-btn i {
+    margin-right: 8px; 
+}
+
+.back-btn:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00000071;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.back-link{
+  font-size: .7em;
+  color: #fff;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.back-link  a{
+  color: #fff; /** change**/
+  text-decoration: none;
+  font-weight: 600;
+}

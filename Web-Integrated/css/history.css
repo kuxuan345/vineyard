@@ -1,0 +1,150 @@
+/* General body styling */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #ffffffb5;
+    position: relative;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.547) 0%,      
+            rgba(74, 70, 59, 0.7) 60%,    
+            rgba(74, 70, 59, 0.9) 80%
+        ),
+        url('../img/oldWine1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+
+/*body::before: Keeps the background image with a blur. */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+
+/* body::after: Adds a dark overlay on top of the background image */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+
+/* History Section Styling */
+.history-style {
+    text-align: justify;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 0 auto; /* Center the history content */
+}
+
+
+.history-style h1 {
+    color: rgba(255, 255, 255, 0.15);
+    text-align: left;
+    font-size: 90px;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-bottom: 100px;
+    letter-spacing: 15px;
+}
+
+
+/* Flexbox Layout for History Sections */
+.history-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+
+.history-img, .history-img1 {
+    margin-bottom: 40px;
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    display: flex;
+    filter: grayscale(70%);
+    box-shadow: 0 4px 15px rgba(110, 110, 110, 0.9);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+
+.history-img:hover, .history-img1:hover {
+    transform: scale(1.1); /* Zoom the image */
+}
+
+
+.year {
+    color: rgba(255, 255, 255, 0.732);
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin-left: 650px;
+    margin-top: -183px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+
+/* Flexbox Layout for History Rows */
+.history-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+
+.history-set {
+    width: 45%; /* Each set will take up 45% of the row */
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 2.3;
+}
+
+
+.history-set p {
+    margin-bottom: 40px;
+}
+
+
+/* Dropcap Styling */
+.dropcap {
+    font-size: 5rem;
+    font-weight: bold;
+    float: left;
+    line-height: 0.6;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: rgba(108, 91, 71, 0.832);
+    font-family: 'Georgia', serif;
+}
+
+
+/* Centered Paragraph */
+.history-set p {
+    text-align: justify;
+}

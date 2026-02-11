@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 22px;
+}
+
+.order-list {
+    border: 2px solid #000000;
+    padding: 30px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 1050px;
+    background: rgb(255, 255, 255); 
+    backdrop-filter: blur(15px);
+    border: 2px double #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.listing {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    color: #000000;
+}
+
+th {
+    background-color: #0000006f;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+td {
+    color: #000000;
+    font-size: 0.7em;
+}

@@ -1,0 +1,271 @@
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    justify-content: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 1100px;
+    background-color: #0000003f;;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.edit-container {
+    display: flex;
+    background: #ffffff;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    h2 {
+        text-align: center;
+    }
+}
+
+.billing-info-table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.billing-info-table td {
+    padding: 5px;
+    vertical-align: top; 
+}
+
+.billing-info-table td:first-child {
+    font-weight: bold;
+    color: #333;
+    width: 50%; 
+}
+
+.billing-info-table input[type="text"] {
+    width: 100%; 
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+.button .edit {
+    padding: 8px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.button .save {
+    background-color: #000000;
+    color: white;
+}
+
+.button .cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+.getInfo{
+    margin: 5px;
+}
+  
+.getInfo label{
+    font-size: 14px;
+    color: #333;
+}
+  
+.getInfo span{
+    width: 95%;
+    border:1px solid #ccc;
+    padding:5px 20px;
+    font-size: 12px;
+    text-transform: none;
+}
+
+/* Container to arrange buttons side by side */
+.button-container {
+    display: flex;
+    padding: 5px 15px;
+    margin-top: 20px;
+}
+
+.button-container .edit {
+    width: 8%;
+}
+
+.displaySum{
+    margin: 15px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.selection{
+    padding-left: 40px;
+}
+
+.pay{
+    border: 1px solid #000;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+.pay:hover{
+    background: #fff;
+    color: #000000;
+}
+
+.edit{
+    margin-right: 15px;
+    border: 1px solid #000;
+    font-size: 16px;
+}
+
+.edit:hover{
+    background: #fff;
+    color: #333;
+}
+
+/* CSS for edit_payment */
+.getProfileInfo {
+    margin: 5px;
+    display: block;
+}
+
+.getProfileInfo label {
+    font-size: 15px;
+    color: #333;
+}
+
+.getProfileInfo span {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    font-size: 12px;
+    text-transform: none;
+}
+
+.getProfileInfo .choose {
+    display: flex;
+    align-items: center;
+}
+
+.getInfo {
+    padding-top: 10px;
+}
+
+.orderTable {
+    width: 100%;
+    max-width: 1150px;
+    border-collapse: collapse;
+    margin: 20px 0; 
+}
+
+.orderTable th,
+.orderTable td {
+    padding: 8px; 
+    text-align: center; 
+    font-size: 13px; 
+    text-transform: none; 
+    border: 1px solid #000; 
+}
+
+.orderTable th {
+    background-color: #00000069; 
+    color: #fff;
+    font-size: 0.9em;
+    text-transform: uppercase; 
+}
+
+.orderTable td {
+    color: #000; 
+}
+
+.orderTable th:nth-child(2),
+.orderTable td:nth-child(2) {
+    width: 40%; 
+    text-align: left; 
+    text-align: center;
+}
+
+.displaySum {
+    width: 25%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.displaySum th, 
+.displaySum td {
+    padding: 8px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: none;
+    border: 1px solid #00000000; 
+}
+
+.displaySum td {
+    text-align: right; 
+    color: #000;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-btn i {
+    margin-right: 8px;
+    font-size: 23px;
+}
+
+.home-btn:hover {
+    color: #ffffff;
+}
+
+.err {
+    color: red;
+    font-size: 15px;
+    margin: 10px;
+  }
+  

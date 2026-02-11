@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    letter-spacing: 1px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box; 
+    overflow: auto;
+}
+
+.profile-card {
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 4px double rgba(255, 255, 255, .5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 460px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Details */
+.profile-details h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.profile-details p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.profile-details h1 {
+    font-size: 23px;
+    color: rgb(255, 255, 255)fff; 
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+/* Style the icon inside the h1 */
+.profile-details h1 i {
+    color: #ffffff; 
+    margin-right: 10px; 
+    font-size: 23px; 
+}
+
+.profile-details table {
+    font-size: 14px;
+    width: 70%;  
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.profile-details table td {
+    padding: 8px 12px; 
+    border: 1px solid #ffffff00;
+    text-align: left; 
+    color: #ffffff; 
+}
+
+/* Label text (strong) */
+.profile-details table td strong {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Add row background hover effect */
+.profile-details table tr:hover {
+    background-color: #f1f1f149; 
+}
+
+/* Container for buttons */
+.button-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for buttons */
+button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #ffffff4b;
+    border: 3px double rgba(255, 255, 255, .5);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 55px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+/* Hover effect to enlarge button */
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05); 
+}
+
+/* Custom Tooltip */
+button:hover::after {
+    content: attr(data-tooltip); 
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+/* Make sure the tooltip is hidden by default */
+button::after {
+    content: '';
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Specific button color styles */
+button[name="edit_profile"] {
+    background-color: #ffffff4b;
+}
+
+button[name="edit_profile"]:hover {
+    background-color: #691212;
+}
+
+button[name="reset_password"] {
+    background-color: #ffffff4b;
+}
+
+button[name="reset_password"]:hover {
+    background-color: #691212;
+}
+
+button[name="delete_account"] {
+    background-color: #ffffff4b;
+}
+
+button[name="delete_account"]:hover {
+    background-color: #691212;
+}
+
+button[name="logout"] {
+    background-color: #ffffff4b;
+}
+
+button[name="logout"]:hover {
+    background-color: #691212;
+}
+
+button[name="home"] {
+    background-color: #ffffff4b;
+}
+
+button[name="home"]:hover {
+    background-color: #691212;
+}

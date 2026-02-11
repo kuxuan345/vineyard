@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  outline: none; 
+  border:none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container1{
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 20px;
+  align-items: center;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container1 form .row1{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.title1{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.inputBox1{
+  margin:15px 0;
+}
+
+.inputBox1 span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inputBox1 input{
+  width: 500px;
+  border:1px solid #ccc;
+  padding:5px 20px;
+  font-size: 12px;
+  text-transform: none;
+  position: relative;
+}
+
+.inputBox1 input:focus{
+  border:1px solid #000;
+}
+.inputBox1 img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.card_pay {
+  border: 1px solid #000;
+  margin: 10px;
+  font-size: 16px;
+  padding: 3px 20px;
+  align-items: center;
+  display: flexbox;
+}
+
+.card_pay:hover{
+    background: #000000;
+    color: white;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

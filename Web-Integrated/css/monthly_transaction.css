@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+/* Container for content */
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px double #000000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555; /* Darker gray for the heading */
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    color: #000;
+    text-align: center;
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+table th {
+    background-color: #e0e0e0; /* Light gray background for header */
+    color: #555; /* Slightly darker gray for header text */
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #fafafa; /* Very light gray for odd rows */
+}
+
+canvas {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: 300px; 
+}

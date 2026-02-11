@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(74, 70, 59, 0.179) 0%,      
+            rgba(117, 113, 101, 0.636) 40%,    
+            rgba(211, 199, 180, 0.8) 70%      
+        ),
+        url(../img/cham-back2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* body::before: Keeps the background image with a blur.*/
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: blur(1px) grayscale(100%);
+    z-index: -1;
+}
+
+/*body::after: Adds a dark overlay on top of the background image. This will darken the image while still allowing the image to be visible.*/
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Top Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* Links in the top menu */
+.menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    transition: color 0.3s, border-color 0.3s;
+    padding: 10px 40px;
+    margin: 0;
+    border: 2px solid transparent;
+}
+
+/* Hover effect for top menu links */
+.menu a:hover {
+    color: #fff;
+    border-color: #ae915a9a;
+}
+
+/* Subcategory menu (if shown) */
+.subcategory-menu {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    gap: 30px;
+}
+
+/* Links in the subcategory menu */
+.subcategory-menu a {
+    text-decoration: none;
+    color: #ffffff5d;
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff4b;
+    border-radius: 1px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Hover effect for subcategory menu links */
+.subcategory-menu a:hover {
+    color: #ffffff;
+    border-color:#ffff;
+}
+
+/* Container for the cart items */
+.cart-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+/* Cart item styling */
+.cart-item {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px;
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover effect for the cart item */
+.cart-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image inside the cart item */
+.cart-item img {
+    width: 100%;  
+    height: 500px;  
+    object-fit: contain;
+    display: flex;
+    filter: brightness(50%);
+    transition: filter 0.3s ease;
+}
+
+/* Hover effect for images inside cart item */
+.cart-item:hover img {
+    filter: brightness(100%);
+}
+
+/* Cart item name */
+.cart-item-name {
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    padding: 30px 0;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+/* Cart item name links */
+.cart-item-name a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.551);
+    font-size: 14px;
+    transition: color 0.3s, border-color 0.3s;
+    padding: 8px 12px;
+    margin: 0;
+    border: 4px double rgba(255, 255, 255, 0.551);
+}
+
+/* Hover effect for cart item name links */
+.cart-item-name a:hover {
+    color: #ffff;
+    border-color: #ffff;
+}
+ 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cart-container {
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .cart-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .top-menu a {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+
+    .subcategory-menu a {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+}
+
+

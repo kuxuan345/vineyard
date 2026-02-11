@@ -1,0 +1,62 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url(../images/harvest.jpeg);
+    }
+    25% {
+        background-image: url(../images/wine_barrel1.jpeg);
+    }
+    50% {
+        background-image: url(../images/wine_making.jpeg);
+    }
+    75% {
+        background-image: url(../images/wine1.jpeg);
+    }
+    100% {
+        background-image: url(../images/wine2.webp);
+    }
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    min-height: 100vh; /* Use min-height instead of height */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden; /* Allow vertical scrolling while hiding horizontal overflow */
+    animation: slideBackground 15s ease-in-out infinite;
+    background-size: cover;
+}
+
+/* body::before: Keeps the background image with a blur.*/
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/*body::after: Adds a dark overlay on top of the background image.
+This will darken the image while still allowing the image to be visible.*/
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: -1;
+}

@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.ob_container {
+    width: 650px;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Title Styles */
+.ob_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form .option select {
+    width: 650px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .option button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form .option button:hover {
+    background-color: #45a049;
+}
+
+/* Bank Image Styles */
+.bank_img {
+    margin: 20px 0;
+}
+
+.bank_img img {
+    border: 2px solid #ddd;
+    border-radius: 10px;       
+    max-width: 100px;      
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;        
+}
+
+.bank_img h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;  
+}
+
+/* Bank Account Login Form Styles */
+.bank_pay {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.bank_pay label {
+    font-size: 15px;
+    color: #333;
+}
+
+/* Adjusted Text Box Height */
+.bank_pay input[type="text"],
+.bank_pay input[type="password"] {
+    height: 40px; 
+    width: 100%;
+    max-width: 700px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 20px; 
+}
+
+.ob_pay2 {
+    border: 1px solid #000;
+    margin: 5px;
+    font-size: 16px;
+    padding: 5px 20px;
+    align-items: center;
+    display: flexbox;
+}
+
+.ob_pay2:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+  

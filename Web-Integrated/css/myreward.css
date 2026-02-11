@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+.rewards-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    border: 2px double #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(199, 182, 131, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+}
+
+.back-btn i {
+    margin-right: 8px; 
+}
+
+.back-btn:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00000071;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.reward-card {
+    background-color: #fffaf2;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reward-info h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #000000;
+}
+
+.reward-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.claim-button {
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.claim-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.claim-button.claimed {
+    background-color: #d3d3d3;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.back-link {
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+p {
+    color: #a21919;
+}
+
+.go-slot {
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: right;
+}
+
+.go-slot i {
+    margin-right: 8px; 
+}
+
+.go-slot:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00000071;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
